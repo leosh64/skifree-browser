@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <title>SkiFree</title>
+  <link rel="icon" href="assets/1.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="original-data.js"></script>
+  <script defer src="original-controls.js"></script>
+  <script defer src="original-world.js"></script>
+  <script defer src="original-collision.js"></script>
+  <script defer src="engine.js"></script>
+  <script defer src="assets.js"></script>
+  <script defer src="game.js"></script>
+</head>
+<body>
+  <main id="playfield" aria-label="SkiFree">
+    <canvas id="slope" width="960" height="610" tabindex="0" aria-label="SkiFree. Arrow keys or numeric keypad to ski, Insert to jump, F2 to restart, F3 to pause. Mouse to aim and click to jump. On touch screens drag to aim and double tap to jump."></canvas>
+    <div class="stats" aria-label="Run statistics">
+      <div>Time: <span id="time">00:00:00.00</span></div>
+      <div>Dist: <span id="distance">0m</span></div>
+      <div>Speed: <span id="speed">0m/s</span></div>
+      <div>Style: <span id="score">0</span></div>
+    </div>
+
+  </main>
+  <dialog id="scores" aria-labelledby="scores-title"><div id="scores-title">High Scores</div><pre id="score-list"></pre><button id="scores-ok">OK</button></dialog>
+</body>
+</html>

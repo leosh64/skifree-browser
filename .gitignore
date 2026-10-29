@@ -1,0 +1,12 @@
+# Generated releases and browser-test screenshots
+/dist/
+
+# Optional local development dependencies
+/node_modules/
+/.venv/
+__pycache__/
+*.pyc
+
+# Local OS/editor files
+.DS_Store
+*.swp
